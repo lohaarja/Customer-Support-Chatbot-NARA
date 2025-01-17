@@ -1,0 +1,8 @@
+transformers
+google-generativeai
+langchain
+langchain-google-genai
+PyPDF2
+vaderSentiment
+python-dotenv
+faiss-cpu
