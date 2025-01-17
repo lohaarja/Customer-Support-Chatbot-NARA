@@ -1,0 +1,863 @@
+{
+    "medicines": [
+      {
+        "symptom": "fever",
+        "intent": "fever_intent",
+        "response": "We recommend you take fever medication like Acetaminophen (Tylenol, Panadol). Be cautious if you have liver disease, as high doses can cause liver damage."
+      },
+      {
+        "symptom": "pain",
+        "intent": "pain_intent",
+        "response": "Acetaminophen (Tylenol, Panadol) is an analgesic/antipyretic used for pain relief. It is available in strengths of 325mg, 500mg, and 650mg. Side effects include nausea, and it should be avoided if you have severe liver disease."
+      },
+      {
+        "symptom": "infection",
+        "intent": "infection_intent",
+        "response": "Amoxicillin (Amoxil) is a Penicillin Antibiotic used for treating bacterial infections. Available in 250mg and 500mg strengths. Do not use if you are allergic to penicillin."
+      },
+      {
+        "symptom": "high blood pressure",
+        "intent": "hypertension_intent",
+        "response": "Lisinopril (Zestril, Prinivil) is an ACE Inhibitor used for managing hypertension and heart failure. It is available in 5mg, 10mg, 20mg, and 40mg strengths. Be cautious if you're pregnant or have a history of angioedema."
+      },
+      {
+        "symptom": "diabetes",
+        "intent": "diabetes_intent",
+        "response": "Metformin (Glucophage) is used for managing Type 2 diabetes. Available in 500mg, 850mg, and 1000mg strengths. It should not be used if you have kidney disease."
+      },
+      {
+        "symptom": "acid reflux",
+        "intent": "acid_reflux_intent",
+        "response": "Omeprazole (Prilosec) is a Proton Pump Inhibitor used for acid reflux and ulcers. It is available in strengths of 10mg, 20mg, and 40mg. Avoid if you have a hypersensitivity to the medication."
+      },
+      {
+        "symptom": "depression",
+        "intent": "depression_intent",
+        "response": "Sertraline (Zoloft) is an SSRI used for treating depression and anxiety. Available in 25mg, 50mg, and 100mg strengths. It should not be combined with MAO inhibitors."
+      },
+      {
+        "symptom": "angina",
+        "intent": "angina_intent",
+        "response": "Amlodipine (Norvasc) is a Calcium Channel Blocker used to manage hypertension and angina. Available in 2.5mg, 5mg, and 10mg strengths. Avoid if you have severe hypotension."
+      },
+      {
+        "symptom": "hypothyroidism",
+        "intent": "hypothyroidism_intent",
+        "response": "Levothyroxine (Synthroid, Levoxyl) is a thyroid hormone replacement used to treat hypothyroidism. Available in 25mcg, 50mcg, 75mcg, and 100mcg strengths. Do not use if you have thyrotoxicosis."
+      },
+      {
+        "symptom": "allergies",
+        "intent": "allergies_intent",
+        "response": "Fluticasone (Flonase) is a corticosteroid used for allergic rhinitis. Available as 50mcg/spray. Avoid if you have active infections."
+      },
+      {
+        "symptom": "fatigue",
+        "intent": "fatigue_intent",
+        "response": "Metoprolol (Lopressor, Toprol-XL) is a Beta Blocker used for hypertension and heart failure. Available in 25mg, 50mg, and 100mg strengths. It may cause fatigue or dizziness, and should not be used in cases of heart block."
+      },
+      {
+        "symptom": "ear infection",
+        "intent": "ear_infection_intent",
+        "response": "Amoxicillin (Amoxil, Trimox) is used to treat ear infections and other bacterial infections. Available in 250mg, 500mg, and 875mg strengths. Avoid if allergic to penicillin."
+      },
+      {
+        "symptom": "respiratory infection",
+        "intent": "respiratory_infection_intent",
+        "response": "Azithromycin (Zithromax) is a macrolide antibiotic used to treat respiratory infections. Available in 250mg and 500mg strengths. Be cautious if you have liver disease or heart rhythm disorders."
+      },
+      {
+        "symptom": "urinary tract infection",
+        "intent": "uti_intent",
+        "response": "Ciprofloxacin (Cipro) is a fluoroquinolone antibiotic used for urinary tract infections. Available in 250mg, 500mg, and 750mg strengths. Avoid during pregnancy and in children."
+      },
+      {
+        "symptom": "skin infection",
+        "intent": "skin_infection_intent",
+        "response": "Doxycycline (Vibramycin, Monodox) is a tetracycline antibiotic used for skin infections. Available in 50mg and 100mg strengths. Avoid during pregnancy or in children under 8."
+      },
+      {
+        "symptom": "bone infection",
+        "intent": "bone_infection_intent",
+        "response": "Cephalexin (Keflex) is a cephalosporin antibiotic used for bone infections. Available in 250mg and 500mg strengths. Avoid if allergic to cephalosporins."
+      },
+      {
+        "symptom": "diarrhea",
+        "intent": "diarrhea_intent",
+        "response": "Clindamycin (Cleocin) is used for treating serious infections, including gastrointestinal infections. Available in 150mg and 300mg strengths. Avoid if you have a history of C. difficile infections."
+      },
+      {
+        "symptom": "Urinary tract infections",
+        "intent": "urinary_tract_infection_intent",
+        "response": "For urinary tract infections, antibiotics like Sulfamethoxazole/Trimethoprim or Nitrofurantoin may be used."
+      },
+      {
+        "symptom": "Pneumocystis pneumonia",
+        "intent": "pneumocystis_pneumonia_intent",
+        "response": "Treatment for Pneumocystis pneumonia includes medications like Sulfamethoxazole/Trimethoprim."
+      },
+      {
+        "symptom": "Ear infections",
+        "intent": "ear_infection_intent",
+        "response": "Ear infections can be treated with antibiotics such as Sulfamethoxazole/Trimethoprim."
+      },
+      {
+        "symptom": "Traveler's diarrhea",
+        "intent": "travelers_diarrhea_intent",
+        "response": "For traveler's diarrhea, antibiotics like Sulfamethoxazole/Trimethoprim are often recommended."
+      },
+      {
+        "symptom": "Nausea",
+        "intent": "nausea_intent",
+        "response": "For nausea, anti-nausea medications like Ondansetron are commonly used."
+      },
+      {
+        "symptom": "Fatigue",
+        "intent": "fatigue_intent",
+        "response": "Consider taking rest, staying hydrated, and possibly taking Vitamin B12 for fatigue."
+      },
+      {
+        "symptom": "Rash",
+        "intent": "rash_intent",
+        "response": "If you experience a rash, it may be a side effect of certain medications, like Sulfamethoxazole/Trimethoprim."
+      },
+      {
+        "symptom": "Sun sensitivity",
+        "intent": "sun_sensitivity_intent",
+        "response": "Sun sensitivity is a known side effect of medications like Sulfamethoxazole/Trimethoprim."
+      },
+      {
+        "symptom": "Blood disorders",
+        "intent": "blood_disorders_intent",
+        "response": "Blood disorders can be a side effect of medications like Sulfamethoxazole/Trimethoprim."
+      },
+      {
+        "symptom": "Brown urine",
+        "intent": "brown_urine_intent",
+        "response": "Brown urine may occur as a side effect of Nitrofurantoin, and it is generally harmless."
+      },
+      {
+        "symptom": "Lung problems",
+        "intent": "lung_problems_intent",
+        "response": "Lung problems are a known side effect of Nitrofurantoin. Consult your doctor if you experience any symptoms."
+      },
+      {
+        "symptom": "Liver problems",
+        "intent": "liver_problems_intent",
+        "response": "Liver problems may be a side effect of Nitrofurantoin. Monitoring liver function is advised."
+      },
+      {
+        "symptom": "Metallic taste",
+        "intent": "metallic_taste_intent",
+        "response": "A metallic taste may occur as a side effect of Metronidazole."
+      },
+      {
+        "symptom": "Disulfiram-like reaction",
+        "intent": "disulfiram_reaction_intent",
+        "response": "Metronidazole can cause a disulfiram-like reaction if taken with alcohol."
+      },
+      {
+        "symptom": "Peripheral neuropathy",
+        "intent": "peripheral_neuropathy_intent",
+        "response": "Peripheral neuropathy may be a side effect of Metronidazole or other medications."
+      },
+      {
+        "symptom": "Dry cough",
+        "intent": "dry_cough_intent",
+        "response": "Dry cough is a known side effect of medications like Lisinopril."
+      },
+      {
+        "symptom": "Dizziness",
+        "intent": "dizziness_intent",
+        "response": "Dizziness can occur as a side effect of medications such as Lisinopril and Metoprolol."
+      },
+      {
+        "symptom": "High potassium levels",
+        "intent": "high_potassium_intent",
+        "response": "High potassium levels can be caused by ACE inhibitors like Lisinopril."
+      },
+      {
+        "symptom": "Fatigue",
+        "intent": "fatigue_intent",
+        "response": "Fatigue can be a side effect of medications like Lisinopril, Metoprolol, and Amlodipine."
+      },
+      {
+        "symptom": "Headache",
+        "intent": "headache_intent",
+        "response": "Headache can be a side effect of many medications, including Lisinopril and Amlodipine."
+      },
+      {
+        "symptom": "Bradycardia",
+        "intent": "bradycardia_intent",
+        "response": "Bradycardia (slow heart rate) can occur with Beta Blockers like Metoprolol."
+      },
+      {
+        "symptom": "Cold hands and feet",
+        "intent": "cold_hands_and_feet_intent",
+        "response": "Cold hands and feet may be a side effect of medications like Metoprolol."
+      },
+      {
+        "symptom": "Depression",
+        "intent": "depression_intent",
+        "response": "Depression can be a side effect of Beta Blockers like Metoprolol."
+      },
+      {
+        "symptom": "Sleep disturbances",
+        "intent": "sleep_disturbances_intent",
+        "response": "Sleep disturbances may occur with medications like Metoprolol."
+      },
+      {
+        "symptom": "Peripheral edema",
+        "intent": "peripheral_edema_intent",
+        "response": "Peripheral edema (swelling) is a common side effect of Amlodipine."
+      },
+      {
+        "symptom": "Flushing",
+        "intent": "flushing_intent",
+        "response": "Flushing can occur with medications like Amlodipine."
+      },
+      {
+        "symptom": "Palpitations",
+        "intent": "palpitations_intent",
+        "response": "Palpitations (irregular heartbeats) may be a side effect of Amlodipine."
+      },
+      {
+          "symptom": "Bleeding",
+          "intent": "Warfarin - Bleeding",
+          "response": "Warfarin may cause bleeding as a side effect. It's important to monitor for unusual bruising or blood loss."
+        },
+        {
+          "symptom": "Bruising",
+          "intent": "Warfarin - Bruising",
+          "response": "Bruising can occur as a result of taking Warfarin. If you notice excessive bruising, seek medical advice."
+        },
+        {
+          "symptom": "Purple toe syndrome",
+          "intent": "Warfarin - Purple toe syndrome",
+          "response": "Purple toe syndrome is a rare side effect of Warfarin. If you notice any changes in the color of your toes, contact your doctor."
+        },
+        {
+          "symptom": "Skin necrosis",
+          "intent": "Warfarin - Skin necrosis",
+          "response": "In rare cases, Warfarin can cause skin necrosis. If you develop any skin discoloration or sores, seek immediate medical attention."
+        },
+        {
+          "symptom": "Hair loss",
+          "intent": "Warfarin - Hair loss",
+          "response": "Hair loss may occur with Warfarin use. If this becomes concerning, consult your healthcare provider."
+        },
+        {
+          "symptom": "Dehydration",
+          "intent": "Furosemide - Dehydration",
+          "response": "Furosemide can cause dehydration. Stay hydrated and monitor for symptoms like dry mouth and dizziness."
+        },
+        {
+          "symptom": "Electrolyte imbalance",
+          "intent": "Furosemide - Electrolyte imbalance",
+          "response": "Furosemide may cause an electrolyte imbalance, so regular monitoring of your blood work is essential."
+        },
+        {
+          "symptom": "Low blood pressure",
+          "intent": "Furosemide - Low blood pressure",
+          "response": "Low blood pressure can occur with Furosemide use. If you feel lightheaded or faint, contact your doctor."
+        },
+        {
+          "symptom": "Increased urination",
+          "intent": "Furosemide - Increased urination",
+          "response": "Increased urination is a common side effect of Furosemide. It is advised to take the medication in the morning to avoid nighttime disturbances."
+        },
+        {
+          "symptom": "Hearing problems",
+          "intent": "Furosemide - Hearing problems",
+          "response": "High doses of Furosemide can lead to hearing problems. If you experience any changes in hearing, contact your doctor."
+        },
+        {
+          "symptom": "Gout",
+          "intent": "Furosemide - Gout",
+          "response": "Furosemide may trigger gout in some individuals. If you experience joint pain, consult your healthcare provider."
+        },
+        {
+          "symptom": "Dizziness",
+          "intent": "Gabapentin - Dizziness",
+          "response": "Dizziness is a possible side effect of Gabapentin. If dizziness persists, consult your doctor."
+        },
+        {
+          "symptom": "Drowsiness",
+          "intent": "Gabapentin - Drowsiness",
+          "response": "Gabapentin may cause drowsiness. Avoid activities requiring full alertness until you know how the medication affects you."
+        },
+        {
+          "symptom": "Weight gain",
+          "intent": "Gabapentin - Weight gain",
+          "response": "Weight gain can occur with Gabapentin use. Maintain a balanced diet and consult your healthcare provider if concerned."
+        },
+        {
+          "symptom": "Peripheral edema",
+          "intent": "Gabapentin - Peripheral edema",
+          "response": "Peripheral edema (swelling of limbs) may occur with Gabapentin. If swelling becomes severe, seek medical advice."
+        },
+        {
+          "symptom": "Dizziness",
+          "intent": "Pregabalin - Dizziness",
+          "response": "Dizziness may occur with Pregabalin use. Be cautious when performing activities that require balance."
+        },
+        {
+          "symptom": "Somnolence",
+          "intent": "Pregabalin - Somnolence",
+          "response": "Somnolence (sleepiness) is a possible side effect of Pregabalin. Avoid driving or operating machinery if you feel drowsy."
+        },
+        {
+          "symptom": "Weight gain",
+          "intent": "Pregabalin - Weight gain",
+          "response": "Weight gain may be experienced with Pregabalin. Monitor your weight and discuss concerns with your doctor."
+        },
+        {
+          "symptom": "Blurred vision",
+          "intent": "Pregabalin - Blurred vision",
+          "response": "Blurred vision may occur while using Pregabalin. If this symptom persists, contact your healthcare provider."
+        },
+        {
+          "symptom": "Nausea",
+          "intent": "Duloxetine - Nausea",
+          "response": "Nausea is a possible side effect of Duloxetine. Try taking it with food to reduce this effect."
+        },
+        {
+          "symptom": "Dry mouth",
+          "intent": "Duloxetine - Dry mouth",
+          "response": "Dry mouth can occur with Duloxetine use. Drinking water frequently or using sugar-free gum may help alleviate this."
+        },
+        {
+          "symptom": "Fatigue",
+          "intent": "Duloxetine - Fatigue",
+          "response": "Fatigue may occur with Duloxetine. If it interferes with daily activities, consult your doctor."
+        },
+        {
+          "symptom": "Insomnia",
+          "intent": "Duloxetine - Insomnia",
+          "response": "Duloxetine can cause insomnia. If sleep disturbances continue, speak with your healthcare provider."
+        },
+        {
+          "symptom": "Chest tightness",
+          "intent": "Sumatriptan - Chest tightness",
+          "response": "Chest tightness is a possible side effect of Sumatriptan. If you experience this, seek immediate medical help."
+        },
+        {
+          "symptom": "Paresthesia",
+          "intent": "Sumatriptan - Paresthesia",
+          "response": "Paresthesia (tingling sensation) may occur with Sumatriptan. If this sensation persists, contact your healthcare provider."
+        },
+        {
+          "symptom": "Dizziness",
+          "intent": "Sumatriptan - Dizziness",
+          "response": "Dizziness can occur when using Sumatriptan. Avoid driving or operating heavy machinery until you are certain it doesn't affect you."
+        },
+        {
+          "symptom": "Fatigue",
+          "intent": "Sumatriptan - Fatigue",
+          "response": "Fatigue is a potential side effect of Sumatriptan. If it becomes bothersome, consult your doctor."
+        },
+        
+            {
+              "symptom": "Cognitive slowing",
+              "intent": "Topiramate - Cognitive slowing",
+              "response": "Cognitive slowing can occur with Topiramate. If you experience difficulty concentrating or memory issues, consult your doctor."
+            },
+            {
+              "symptom": "Paresthesia",
+              "intent": "Topiramate - Paresthesia",
+              "response": "Paresthesia (tingling sensation) may occur with Topiramate. If this becomes bothersome, let your healthcare provider know."
+            },
+            {
+              "symptom": "Weight loss",
+              "intent": "Topiramate - Weight loss",
+              "response": "Weight loss can occur with Topiramate. If it becomes significant or concerning, speak to your doctor."
+            },
+            {
+              "symptom": "Vision changes",
+              "intent": "Topiramate - Vision changes",
+              "response": "Topiramate can cause vision changes. If you experience blurred vision or other eye issues, consult your healthcare provider."
+            },
+            {
+              "symptom": "Dizziness",
+              "intent": "Tramadol - Dizziness",
+              "response": "Dizziness is a potential side effect of Tramadol. Avoid activities that require full concentration if you experience this symptom."
+            },
+            {
+              "symptom": "Nausea",
+              "intent": "Tramadol - Nausea",
+              "response": "Nausea may occur when taking Tramadol. Taking the medication with food may help reduce this effect."
+            },
+            {
+              "symptom": "Constipation",
+              "intent": "Tramadol - Constipation",
+              "response": "Constipation is a common side effect of Tramadol. Drink plenty of water and consider increasing fiber in your diet."
+            },
+            {
+              "symptom": "Seizures",
+              "intent": "Tramadol - Seizures",
+              "response": "Tramadol can increase the risk of seizures, especially at high doses. If you experience a seizure, seek immediate medical attention."
+            },
+            {
+              "symptom": "Dizziness",
+              "intent": "Carbamazepine - Dizziness",
+              "response": "Dizziness can occur with Carbamazepine. Avoid operating heavy machinery or driving until you know how it affects you."
+            },
+            {
+              "symptom": "Ataxia",
+              "intent": "Carbamazepine - Ataxia",
+              "response": "Ataxia (lack of coordination) can occur with Carbamazepine. If you experience difficulty walking, consult your doctor."
+            },
+            {
+              "symptom": "Blood disorders",
+              "intent": "Carbamazepine - Blood disorders",
+              "response": "Carbamazepine may affect your blood cells. Regular blood tests are necessary to monitor for blood disorders."
+            },
+            {
+              "symptom": "Skin reactions",
+              "intent": "Carbamazepine - Skin reactions",
+              "response": "Skin reactions such as rashes can occur with Carbamazepine. If you develop a rash, contact your healthcare provider immediately."
+            },
+            {
+              "symptom": "Dizziness",
+              "intent": "Rizatriptan - Dizziness",
+              "response": "Rizatriptan can cause dizziness. Use caution when performing tasks that require full attention, such as driving."
+            },
+            {
+              "symptom": "Fatigue",
+              "intent": "Rizatriptan - Fatigue",
+              "response": "Fatigue is a possible side effect of Rizatriptan. If it becomes severe, consult your doctor."
+            },
+            {
+              "symptom": "Chest pressure",
+              "intent": "Rizatriptan - Chest pressure",
+              "response": "Chest pressure can occur with Rizatriptan use. If you experience chest tightness, seek medical attention immediately."
+            },
+            {
+              "symptom": "Nausea",
+              "intent": "Rizatriptan - Nausea",
+              "response": "Nausea can occur with Rizatriptan. If this becomes troublesome, contact your healthcare provider."
+            },
+            {
+              "symptom": "Liver dysfunction",
+              "intent": "Valproic Acid - Liver dysfunction",
+              "response": "Valproic Acid can cause liver dysfunction. Regular liver function tests are necessary during treatment."
+            },
+            {
+              "symptom": "Thrombocytopenia",
+              "intent": "Valproic Acid - Thrombocytopenia",
+              "response": "Valproic Acid may cause a decrease in platelets, leading to thrombocytopenia. Regular blood tests are important."
+            },
+            {
+              "symptom": "Weight gain",
+              "intent": "Valproic Acid - Weight gain",
+              "response": "Weight gain is a potential side effect of Valproic Acid. If this becomes significant, consult your healthcare provider."
+            },
+            {
+              "symptom": "Hair loss",
+              "intent": "Valproic Acid - Hair loss",
+              "response": "Hair loss can occur with Valproic Acid use. If this becomes noticeable, speak to your doctor."
+            },
+            {
+              "symptom": "Behavioral changes",
+              "intent": "Levetiracetam - Behavioral changes",
+              "response": "Levetiracetam can cause behavioral changes such as aggression or irritability. If you notice any mood changes, inform your healthcare provider."
+            },
+            {
+              "symptom": "Fatigue",
+              "intent": "Levetiracetam - Fatigue",
+              "response": "Fatigue is a common side effect of Levetiracetam. If this affects your daily activities, consult your doctor."
+            },
+            {
+              "symptom": "Dizziness",
+              "intent": "Levetiracetam - Dizziness",
+              "response": "Dizziness may occur with Levetiracetam. Avoid activities that require alertness if you experience dizziness."
+            },
+            {
+              "symptom": "Depression",
+              "intent": "Levetiracetam - Depression",
+              "response": "Levetiracetam may cause depression or mood changes. Seek medical advice if you experience persistent feelings of sadness."
+            },
+            {
+              "symptom": "Gastric ulcers",
+              "intent": "Ibuprofen - Gastric ulcers",
+              "response": "Ibuprofen can cause gastric ulcers. Taking it with food may help reduce the risk, but consult your doctor if you have a history of ulcers."
+            },
+            {
+              "symptom": "Heartburn",
+              "intent": "Ibuprofen - Heartburn",
+              "response": "Heartburn can occur with Ibuprofen use. Avoid lying down immediately after taking it, and consult your doctor if symptoms persist."
+            },
+            {
+              "symptom": "Dizziness",
+              "intent": "Ibuprofen - Dizziness",
+              "response": "Dizziness can occur with Ibuprofen. Use caution when standing up quickly, especially if you are feeling lightheaded."
+            },
+            {
+              "symptom": "Hypertension",
+              "intent": "Ibuprofen - Hypertension",
+              "response": "Ibuprofen may cause an increase in blood pressure. Regular monitoring is recommended if you have a history of hypertension."
+            },
+            {
+              "symptom": "Kidney problems",
+              "intent": "Ibuprofen - Kidney problems",
+              "response": "Ibuprofen can affect kidney function, especially with long-term use. Stay hydrated and inform your doctor if you experience any changes in urination."
+            },
+            
+                {
+                  "symptom": "Arthritis",
+                  "intent": "Naproxen - Arthritis",
+                  "response": "Naproxen is commonly used to treat arthritis."
+                },
+                {
+                  "symptom": "Ankylosing spondylitis",
+                  "intent": "Naproxen - Ankylosing spondylitis",
+                  "response": "Naproxen helps manage ankylosing spondylitis."
+                },
+                {
+                  "symptom": "Acute gout",
+                  "intent": "Naproxen - Acute gout",
+                  "response": "Naproxen is effective for acute gout pain."
+                },
+                {
+                  "symptom": "Menstrual pain",
+                  "intent": "Naproxen - Menstrual pain",
+                  "response": "Naproxen can relieve menstrual pain."
+                },
+                {
+                  "symptom": "General pain",
+                  "intent": "Naproxen - General pain",
+                  "response": "Naproxen is used for general pain relief."
+                },
+                {
+                  "symptom": "Rheumatoid arthritis",
+                  "intent": "Diclofenac - Rheumatoid arthritis",
+                  "response": "Diclofenac is often used to treat rheumatoid arthritis."
+                },
+                {
+                  "symptom": "Osteoarthritis",
+                  "intent": "Diclofenac - Osteoarthritis",
+                  "response": "Diclofenac can help alleviate osteoarthritis pain."
+                },
+                {
+                  "symptom": "Ankylosing spondylitis",
+                  "intent": "Diclofenac - Ankylosing spondylitis",
+                  "response": "Diclofenac is used to manage ankylosing spondylitis."
+                },
+                {
+                  "symptom": "Acute muscle pain",
+                  "intent": "Diclofenac - Acute muscle pain",
+                  "response": "Diclofenac helps with acute muscle pain relief."
+                },
+                {
+                  "symptom": "Migraine",
+                  "intent": "Diclofenac - Migraine",
+                  "response": "Diclofenac can be used to treat migraines."
+                },
+                {
+                  "symptom": "Osteoarthritis",
+                  "intent": "Celecoxib - Osteoarthritis",
+                  "response": "Celecoxib is used to treat osteoarthritis."
+                },
+                {
+                  "symptom": "Rheumatoid arthritis",
+                  "intent": "Celecoxib - Rheumatoid arthritis",
+                  "response": "Celecoxib is effective in managing rheumatoid arthritis."
+                },
+                {
+                  "symptom": "Acute pain",
+                  "intent": "Celecoxib - Acute pain",
+                  "response": "Celecoxib can be used for acute pain relief."
+                },
+                {
+                  "symptom": "Primary dysmenorrhea",
+                  "intent": "Celecoxib - Primary dysmenorrhea",
+                  "response": "Celecoxib helps in managing primary dysmenorrhea (painful menstruation)."
+                },
+                {
+                  "symptom": "Osteoarthritis",
+                  "intent": "Meloxicam - Osteoarthritis",
+                  "response": "Meloxicam is commonly prescribed for osteoarthritis."
+                },
+                {
+                  "symptom": "Rheumatoid arthritis",
+                  "intent": "Meloxicam - Rheumatoid arthritis",
+                  "response": "Meloxicam helps manage rheumatoid arthritis."
+                },
+                {
+                  "symptom": "Juvenile rheumatoid arthritis",
+                  "intent": "Meloxicam - Juvenile rheumatoid arthritis",
+                  "response": "Meloxicam can be used in juvenile rheumatoid arthritis."
+                },
+                {
+                  "symptom": "Severe arthritis",
+                  "intent": "Indomethacin - Severe arthritis",
+                  "response": "Indomethacin is used for severe arthritis pain relief."
+                },
+                {
+                  "symptom": "Acute gout",
+                  "intent": "Indomethacin - Acute gout",
+                  "response": "Indomethacin is effective in treating acute gout."
+                },
+                {
+                  "symptom": "Bursitis",
+                  "intent": "Indomethacin - Bursitis",
+                  "response": "Indomethacin is used to treat bursitis."
+                },
+                {
+                  "symptom": "Tendonitis",
+                  "intent": "Indomethacin - Tendonitis",
+                  "response": "Indomethacin helps with tendonitis symptoms."
+                },
+                {
+                  "symptom": "Short-term severe pain",
+                  "intent": "Ketorolac - Short-term severe pain",
+                  "response": "Ketorolac is prescribed for short-term severe pain."
+                },
+                {
+                  "symptom": "Post-operative pain",
+                  "intent": "Ketorolac - Post-operative pain",
+                  "response": "Ketorolac is used for post-operative pain relief."
+                },
+                {
+                  "symptom": "Migraine",
+                  "intent": "Ketorolac - Migraine",
+                  "response": "Ketorolac can be used to relieve migraine pain."
+                },
+                {
+                  "symptom": "Rheumatoid arthritis",
+                  "intent": "Piroxicam - Rheumatoid arthritis",
+                  "response": "Piroxicam is used to treat rheumatoid arthritis."
+                },
+                {
+                  "symptom": "Osteoarthritis",
+                  "intent": "Piroxicam - Osteoarthritis",
+                  "response": "Piroxicam can help manage osteoarthritis symptoms."
+                },
+                {
+                  "symptom": "Ankylosing spondylitis",
+                  "intent": "Piroxicam - Ankylosing spondylitis",
+                  "response": "Piroxicam is effective for ankylosing spondylitis."
+                },
+                {
+                  "symptom": "Osteoarthritis",
+                  "intent": "Etodolac - Osteoarthritis",
+                  "response": "Etodolac is used for osteoarthritis management."
+                },
+                {
+                  "symptom": "Rheumatoid arthritis",
+                  "intent": "Etodolac - Rheumatoid arthritis",
+                  "response": "Etodolac is also prescribed for rheumatoid arthritis."
+                },
+                {
+                  "symptom": "Acute pain",
+                  "intent": "Etodolac - Acute pain",
+                  "response": "Etodolac can be used for acute pain relief."
+                },
+                {
+                  "symptom": "Osteoarthritis",
+                  "intent": "Nabumetone - Osteoarthritis",
+                  "response": "Nabumetone is commonly prescribed for osteoarthritis."
+                },
+                {
+                  "symptom": "Rheumatoid arthritis",
+                  "intent": "Nabumetone - Rheumatoid arthritis",
+                  "response": "Nabumetone is effective for rheumatoid arthritis."
+                },
+                {
+                  "symptom": "Chronic pain",
+                  "intent": "Nabumetone - Chronic pain",
+                  "response": "Nabumetone helps with chronic pain management."
+                },
+                {
+                  "symptom": "Muscle spasticity",
+                  "intent": "Baclofen - Muscle spasticity",
+                  "response": "Baclofen is used to treat muscle spasticity."
+                },
+                {
+                  "symptom": "Multiple sclerosis",
+                  "intent": "Baclofen - Multiple sclerosis",
+                  "response": "Baclofen helps manage muscle spasticity in multiple sclerosis."
+                },
+                {
+                  "symptom": "Spinal cord injuries",
+                  "intent": "Baclofen - Spinal cord injuries",
+                  "response": "Baclofen can be used for spasticity from spinal cord injuries."
+                },
+                {
+                  "symptom": "Cerebral palsy",
+                  "intent": "Baclofen - Cerebral palsy",
+                  "response": "Baclofen is used to manage spasticity in cerebral palsy."
+                },
+                {
+                  "symptom": "Muscle spasms",
+                  "intent": "Cyclobenzaprine - Muscle spasms",
+                  "response": "Cyclobenzaprine is used to relieve muscle spasms."
+                },
+                {
+                  "symptom": "Acute musculoskeletal pain",
+                  "intent": "Cyclobenzaprine - Acute musculoskeletal pain",
+                  "response": "Cyclobenzaprine helps with acute musculoskeletal pain."
+                },
+                {
+                  "symptom": "Back pain",
+                  "intent": "Cyclobenzaprine - Back pain",
+                  "response": "Cyclobenzaprine can help with back pain."
+                },
+                
+                    {
+                      "symptom": "Muscle spasms",
+                      "intent": "Methocarbamol - Muscle spasms",
+                      "response": "Methocarbamol is used to relieve muscle spasms and musculoskeletal pain. It may cause drowsiness, dizziness, or headache, so be cautious while engaging in activities that require focus."
+                    },
+                    {
+                      "symptom": "Muscle spasticity",
+                      "intent": "Tizanidine - Muscle spasticity",
+                      "response": "Tizanidine helps manage muscle spasticity from conditions like multiple sclerosis or spinal cord injury. Common side effects include drowsiness and dizziness. Avoid using it with certain antibiotics like Cipro."
+                    },
+                    {
+                      "symptom": "Acute musculoskeletal pain",
+                      "intent": "Carisoprodol - Acute musculoskeletal pain",
+                      "response": "Carisoprodol is effective in relieving acute musculoskeletal pain, but it can cause drowsiness, dizziness, and a risk of dependence. It's important to follow the prescribed dosage."
+                    },
+                    {
+                      "symptom": "Muscle spasms",
+                      "intent": "Orphenadrine - Muscle spasms",
+                      "response": "Orphenadrine helps treat muscle spasms and pain. It may cause side effects such as dry mouth, blurred vision, and urinary retention. If you experience confusion, consult your healthcare provider."
+                    },
+                    {
+                      "symptom": "Muscle spasticity",
+                      "intent": "Dantrolene - Muscle spasticity",
+                      "response": "Dantrolene is used for muscle spasticity and conditions like cerebral palsy. Watch out for side effects such as liver toxicity and weakness, and contact your doctor if these occur."
+                    },
+                    {
+                      "symptom": "Musculoskeletal pain",
+                      "intent": "Metaxalone - Musculoskeletal pain",
+                      "response": "Metaxalone can relieve musculoskeletal pain, but it may cause drowsiness and dizziness. People with liver or kidney disease should be cautious."
+                    },
+                    {
+                      "symptom": "Muscle spasms",
+                      "intent": "Chlorzoxazone - Muscle spasms",
+                      "response": "Chlorzoxazone is effective for muscle spasms but may lead to dizziness or liver problems. If you notice unusual symptoms, inform your doctor."
+                    },
+                    {
+                      "symptom": "Muscle spasms",
+                      "intent": "Diazepam - Muscle spasms",
+                      "response": "Diazepam helps relax muscles and treat conditions like anxiety or seizures. Be mindful of potential side effects, including sedation and balance issues, especially when combined with other sedatives."
+                    },
+                    {
+                      "symptom": "Bronchospasm",
+                      "intent": "Albuterol - Bronchospasm",
+                      "response": "Albuterol is used to relieve acute bronchospasm during asthma attacks. Side effects may include tremors and anxiety. If you have heart conditions, consult your doctor before use."
+                    },
+                    {
+                      "symptom": "Asthma maintenance",
+                      "intent": "Fluticasone - Asthma maintenance",
+                      "response": "Fluticasone is used to control asthma symptoms over the long term. It can cause oral thrush or hoarseness. Regular oral care can help reduce these side effects."
+                    },
+                    {
+                      "symptom": "Asthma maintenance",
+                      "intent": "Salmeterol - Asthma maintenance",
+                      "response": "Salmeterol helps with long-term asthma management, but it can cause throat irritation or muscle pain. It should not be used alone for acute asthma symptoms."
+                    },
+                    {
+                      "symptom": "COPD",
+                      "intent": "Tiotropium - COPD",
+                      "response": "Tiotropium is prescribed for chronic obstructive pulmonary disease (COPD) and asthma. It may cause dry mouth or sinusitis. If these persist, contact your healthcare provider."
+                    },
+                    {
+                      "symptom": "Asthma management",
+                      "intent": "Montelukast - Asthma management",
+                      "response": "Montelukast is used for chronic asthma treatment and allergic rhinitis. Side effects can include headaches and mental health changes. Let your doctor know if you experience unusual mood changes."
+                    },
+                    {
+                      "symptom": "Depression",
+                      "intent": "Fluoxetine - Depression",
+                      "response": "Fluoxetine helps treat depression and other mood disorders. Side effects may include nausea and sleep problems. Inform your healthcare provider if side effects are bothersome."
+                    },
+                    {
+                      "symptom": "Depression",
+                      "intent": "Sertraline - Depression",
+                      "response": "Sertraline is an SSRI for managing depression, anxiety, and OCD. Side effects like nausea or insomnia may occur. It’s important to follow the prescribed dosage for best results."
+                    },
+                    {
+                      "symptom": "Depression",
+                      "intent": "Venlafaxine - Depression",
+                      "response": "Venlafaxine is used for depression and anxiety disorders. It can cause nausea and hypertension. Regular checkups to monitor blood pressure are advised during treatment."
+                    },
+                    {
+                      "symptom": "Schizophrenia",
+                      "intent": "Quetiapine - Schizophrenia",
+                      "response": "Quetiapine is used to treat schizophrenia and bipolar disorder. Common side effects include weight gain and sedation. If you notice any extreme side effects, consult your healthcare provider."
+                    },
+                    {
+                      "symptom": "Schizophrenia",
+                      "intent": "Risperidone - Schizophrenia",
+                      "response": "Risperidone is used to treat schizophrenia, bipolar mania, and autism-related irritability. Side effects can include weight gain, sedation, and orthostatic hypotension. Monitor closely for any side effects."
+                    },
+                    {
+                      "symptom": "Bipolar disorder",
+                      "intent": "Lithium - Bipolar disorder",
+                      "response": "Lithium is used for the treatment of bipolar disorder. Side effects may include tremor, frequent urination, and weight gain. Regular monitoring of kidney and thyroid function is necessary."
+                    },
+                    [
+                        {
+                          "symptom": "Major depressive disorder",
+                          "intent": "Bupropion - Major depressive disorder",
+                          "response": "Bupropion is used for major depressive disorder, and it can cause side effects such as insomnia, headache, and weight loss. It should not be used by individuals with seizure disorders or eating disorders."
+                        },
+                        {
+                          "symptom": "Panic disorder",
+                          "intent": "Clonazepam - Panic disorder",
+                          "response": "Clonazepam is prescribed for panic disorders, but it may lead to sedation, cognitive impairment, and memory issues. People with severe respiratory insufficiency or sleep apnea should avoid it."
+                        },
+                        {
+                          "symptom": "Generalized anxiety disorder",
+                          "intent": "Duloxetine - Generalized anxiety disorder",
+                          "response": "Duloxetine helps with generalized anxiety disorder but can cause side effects like nausea, dry mouth, and excessive sweating. Avoid if you have liver disease or take MAO inhibitors."
+                        },
+                        {
+                          "symptom": "Schizophrenia",
+                          "intent": "Aripiprazole - Schizophrenia",
+                          "response": "Aripiprazole treats schizophrenia and related disorders but may cause akathisia, weight gain, and insomnia. It is contraindicated for those with dementia-related psychosis."
+                        },
+                        {
+                          "symptom": "Major depressive disorder",
+                          "intent": "Escitalopram - Major depressive disorder",
+                          "response": "Escitalopram is an SSRI for major depressive disorder. Side effects can include sexual dysfunction, insomnia, and dizziness. It should not be combined with MAO inhibitors."
+                        },
+                        {
+                          "symptom": "Schizophrenia",
+                          "intent": "Olanzapine - Schizophrenia",
+                          "response": "Olanzapine is effective for schizophrenia but may lead to significant weight gain, metabolic changes, and sedation. Regular monitoring is necessary, especially for those with a risk of diabetes."
+                        },
+                        {
+                          "symptom": "Bipolar disorder maintenance",
+                          "intent": "Lamotrigine - Bipolar disorder maintenance",
+                          "response": "Lamotrigine helps manage bipolar disorder but may cause rash, headache, and dizziness. It should not be used by individuals with severe liver disease."
+                        },
+                        {
+                          "symptom": "Major depressive disorder",
+                          "intent": "Mirtazapine - Major depressive disorder",
+                          "response": "Mirtazapine is used for major depressive disorder, with potential side effects such as sedation, weight gain, and increased appetite. It should not be taken with MAO inhibitors."
+                        },
+                        {
+                          "symptom": "Schizophrenia",
+                          "intent": "Ziprasidone - Schizophrenia",
+                          "response": "Ziprasidone treats schizophrenia but may cause QT prolongation, somnolence, and dizziness. It is contraindicated in individuals with recent MI or uncompensated heart failure."
+                        }
+                      ]
+                    ]
+}
+                      
+
+                  
+                  
+              
+              
+
+
+          
+          
+      
+      
+    
+    
