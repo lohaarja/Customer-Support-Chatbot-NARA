@@ -1,0 +1,16 @@
+User: fever
+Bot: Based on your symptom, it seems related to: Fibromyalgia.
+
+Here are some medicines that may help:
+
+Pregabalin (Anticonvulsant/Analgesic): 25mg, 50mg, 75mg, 100mg, 150mg, 200mg, 300mg.
+Contraindications: Hypersensitivity.
+Possible side effects: Dizziness, Somnolence, Weight gain, Blurred vision.
+
+Duloxetine (SNRI): 20mg, 30mg, 60mg.
+Contraindications: MAO inhibitors, Glaucoma.
+Possible side effects: Nausea, Dry mouth, Fatigue, Insomnia.
+
+Duloxetine (SNRI): 20mg, 30mg, 60mg.
+Contraindications: MAO inhibitors, Uncontrolled narrow-angle glaucoma, Liver disease.
+Possible side effects: Nausea, Dry mouth, Constipation, Decreased appetite, Excessive sweating.
