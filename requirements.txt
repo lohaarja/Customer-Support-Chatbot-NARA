@@ -2,6 +2,7 @@ transformers
 google-generativeai
 langchain
 langchain-google-genai
+langchain_community
 PyPDF2
 vaderSentiment
 python-dotenv
