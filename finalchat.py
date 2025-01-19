@@ -12,6 +12,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from difflib import SequenceMatcher
 from dotenv import load_dotenv
 import speech_recognition as sr
+# import pyttsx3
 import threading
 import queue
 import os
@@ -24,9 +25,15 @@ import re
 
 # Initialize speech components
 @st.cache_resource
-def initialize_speech_components():
-    recognizer = sr.Recognizer()
-    return recognizer
+# def initialize_speech_components():
+#     recognizer = sr.Recognizer()
+#     engine = pyttsx3.init()
+#     return recognizer, engine
+
+# def speak(engine, text):
+#     """Convert text to speech."""
+#     engine.say(text)
+#     engine.runAndWait()
 
 def listen(recognizer):
     """Listen for user input and convert speech to text."""
@@ -239,7 +246,7 @@ def main():
     st.title("Smart Customer Support Chatbot 🤖 with Voice Input")
 
     # Initialize speech components
-    recognizer = initialize_speech_components()
+    recognizer, engine = initialize_speech_components()
 
     # Initialize chat instance
     if 'chat_instance' not in st.session_state:
@@ -291,21 +298,37 @@ def main():
         col1, col2 = st.columns([4, 1])
         
         with col1:
-            # If we have voice input, display it
-            if st.session_state.voice_input_received:
-                st.text_area("Your query:", value=st.session_state.voice_input_received, height=100)
-                
+            # If we have voice input, display it in the text input
+            default_value = st.session_state.voice_input_received if st.session_state.voice_input_received else ""
+            user_input = st.text_input("Type your message here...", value=default_value)
+        
         with col2:
-            voice_button = st.button("🎤", use_container_width=True)
-            if voice_button:
-                user_input = listen(recognizer)
-                if user_input:
-                    st.session_state.voice_input_received = user_input
-                    intent = classify_intent(user_input)
-                    response = handle_chat_input(user_input, intent, st.session_state.chat_instance)
-                    st.session_state.messages.append({"role": "user", "text": user_input})
-                    st.session_state.messages.append({"role": "assistant", "text": response})
-                    st.experimental_rerun()
+            # Add voice input button
+            if st.button("🎤 Voice Input"):
+                with st.spinner("Listening..."):
+                    voice_input = listen(recognizer)
+                    if voice_input:
+                        st.session_state.voice_input_received = voice_input
+                        st.rerun()
+                    else:
+                        st.error("Could not understand audio. Please try again.")
+        
+        if st.button("Send") and (user_input or st.session_state.voice_input_received):
+            current_input = user_input or st.session_state.voice_input_received
+            intent = classify_intent(current_input)
+            response = handle_chat_input(current_input, intent, st.session_state.chat_instance)
+            
+            # Add messages to chat history
+            st.session_state.messages.append({"role": "user", "text": current_input})
+            st.session_state.messages.append({"role": "assistant", "text": response})
+            
+            # Convert response to speech
+            # threading.Thread(target=speak, args=(engine, response)).start()
+            
+            # Clear the voice input
+            st.session_state.voice_input_received = None
+            
+            st.rerun()
 
 if __name__ == "__main__":
     main()
