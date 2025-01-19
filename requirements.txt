@@ -15,3 +15,5 @@ python-dotenv
 altair
 accelerate
 tiktoken
+SpeechRecognition
+pyttsx3
