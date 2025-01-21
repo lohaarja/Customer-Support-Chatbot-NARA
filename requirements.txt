@@ -17,4 +17,4 @@ accelerate
 tiktoken
 SpeechRecognition
 pyttsx3
-espeak
+espeaking
